@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="86586" started-at="2017-12-14T05:34:39Z" finished-at="2017-12-14T05:36:05Z">
+    <groups>
+    </groups>
+    <test name="HomeValidatie" duration-ms="50205" started-at="2017-12-14T05:34:39Z" finished-at="2017-12-14T05:35:29Z">
+      <class name="udemy.project.HomePage">
+        <test-method status="PASS" signature="initializedriver()[pri:0, instance:udemy.project.HomePage@661972b0]" name="initializedriver" is-config="true" duration-ms="8876" started-at="2017-12-14T11:04:39Z" finished-at="2017-12-14T11:04:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializedriver -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:udemy.project.HomePage@661972b0]" name="basePageNavigation" duration-ms="29354" started-at="2017-12-14T11:04:48Z" data-provider="getdata" finished-at="2017-12-14T11:05:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[nonrestricted@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[restricted user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="basePageNavigation(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:udemy.project.HomePage@661972b0]" name="basePageNavigation" duration-ms="11796" started-at="2017-12-14T11:05:17Z" data-provider="getdata" finished-at="2017-12-14T11:05:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[sona.ahmed@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Newlife2123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[non restricted user]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- basePageNavigation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:udemy.project.HomePage@661972b0]" name="teardown" is-config="true" duration-ms="152" started-at="2017-12-14T11:05:29Z" finished-at="2017-12-14T11:05:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- udemy.project.HomePage -->
+    </test> <!-- HomeValidatie -->
+    <test name="Validate navigation bar" duration-ms="17720" started-at="2017-12-14T05:35:29Z" finished-at="2017-12-14T05:35:47Z">
+      <class name="udemy.project.ValidateNavigation">
+        <test-method status="PASS" signature="initializedriver()[pri:0, instance:udemy.project.ValidateNavigation@5c5eefef]" name="initializedriver" is-config="true" duration-ms="15265" started-at="2017-12-14T11:05:29Z" finished-at="2017-12-14T11:05:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializedriver -->
+        <test-method status="PASS" signature="validatenavigation()[pri:0, instance:udemy.project.ValidateNavigation@5c5eefef]" name="validatenavigation" duration-ms="114" started-at="2017-12-14T11:05:44Z" finished-at="2017-12-14T11:05:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatenavigation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:udemy.project.ValidateNavigation@5c5eefef]" name="teardown" is-config="true" duration-ms="2338" started-at="2017-12-14T11:05:44Z" finished-at="2017-12-14T11:05:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- udemy.project.ValidateNavigation -->
+    </test> <!-- Validate navigation bar -->
+    <test name="Validate title" duration-ms="18622" started-at="2017-12-14T05:35:47Z" finished-at="2017-12-14T05:36:05Z">
+      <class name="udemy.project.ValidateTitle">
+        <test-method status="PASS" signature="initializedriver()[pri:0, instance:udemy.project.ValidateTitle@478190fc]" name="initializedriver" is-config="true" duration-ms="15217" started-at="2017-12-14T11:05:47Z" finished-at="2017-12-14T11:06:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializedriver -->
+        <test-method status="FAIL" signature="validatetitle()[pri:0, instance:udemy.project.ValidateTitle@478190fc]" name="validatetitle" duration-ms="121" started-at="2017-12-14T11:06:02Z" finished-at="2017-12-14T11:06:02Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [FEATURED COURSE] but found [FEATURED COURSES]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [FEATURED COURSE] but found [FEATURED COURSES]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:176)
+	at org.testng.Assert.assertEquals(Assert.java:186)
+	at udemy.project.ValidateTitle.validatetitle(ValidateTitle.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatetitle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:udemy.project.ValidateTitle@478190fc]" name="teardown" is-config="true" duration-ms="2318" started-at="2017-12-14T11:06:03Z" finished-at="2017-12-14T11:06:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- udemy.project.ValidateTitle -->
+    </test> <!-- Validate title -->
+  </suite> <!-- Suite -->
+</testng-results>

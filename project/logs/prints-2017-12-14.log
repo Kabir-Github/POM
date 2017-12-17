@@ -1,0 +1,8 @@
+11:35:22.395 [main] DEBUG resources.Base - Clicked on Login
+11:35:22.700 [main] DEBUG resources.Base - Entered username
+11:35:22.841 [main] DEBUG resources.Base - Entered password
+11:35:22.842 [main] INFO  resources.Base - non restricted user
+11:35:29.135 [main] INFO  resources.Base - Driver initialized
+11:35:40.099 [main] INFO  resources.Base - Navigated to url
+11:35:40.201 [main] INFO  resources.Base - Sucessfully validated the navigation bar
+11:35:40.472 [main] INFO  resources.Base - Driver closed

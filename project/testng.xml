@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="udemy.project.Listeners"/>
+<listener class-name="resources.ExtentReporterNG"/>
+</listeners>
+  <test name="HomeValidatie">
+    <classes>
+     <class name="udemy.project.HomePage"/>
+      </classes>
+  </test> 
+  <test name="Validate navigation bar">
+    <classes>
+      <class name="udemy.project.ValidateNavigation"/>
+      </classes>
+  </test> 
+   <test name="Validate title">
+    <classes>
+      <class name="udemy.project.ValidateTitle"/>
+      </classes>
+  </test> 
+</suite> <!-- Suite -->

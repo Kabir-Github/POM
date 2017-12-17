@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="udemy.project.Listeners"/>
+  </listeners>
+  <test name="Validate title(failed)">
+    <classes>
+      <class name="udemy.project.ValidateTitle">
+        <methods>
+          <include name="initializedriver"/>
+          <include name="teardown"/>
+          <include name="validatetitle"/>
+        </methods>
+      </class> <!-- udemy.project.ValidateTitle -->
+      <class name="udemy.project.ValidateNavigation">
+        <methods>
+          <include name="initializedriver"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- udemy.project.ValidateNavigation -->
+      <class name="udemy.project.HomePage">
+        <methods>
+          <include name="teardown"/>
+          <include name="initializedriver"/>
+        </methods>
+      </class> <!-- udemy.project.HomePage -->
+    </classes>
+  </test> <!-- Validate title(failed) -->
+</suite> <!-- Failed suite [Suite] -->
